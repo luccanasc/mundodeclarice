@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mundo de Clarice</title>
+    <!-- Carrega o Tailwind CSS para um estilo moderno e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fef2f2; /* Fundo off-white com um toque de vermelho (red-50) */
+            color: #450a0a; /* Cor do texto principal (dark red-900) */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Cabeçalho Principal (agora em um vermelho mais escuro) -->
+    <header class="bg-red-900 shadow-lg p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">O Mundo de Clarice</h1>
+            <!-- Menu de navegação responsivo -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#inicio" class="text-red-100 hover:text-white font-semibold transition-colors duration-200">Início</a></li>
+                    <li><a href="#biografia" class="text-red-100 hover:text-white font-semibold transition-colors duration-200">Biografia</a></li>
+                    <li><a href="#sugestao-do-dia" class="text-red-100 hover:text-white font-semibold transition-colors duration-200">Sugestão do Dia</a></li>
+                    <li><a href="#romances" class="text-red-100 hover:text-white font-semibold transition-colors duration-200">Romances</a></li>
+                    <li><a href="#contos" class="text-red-100 hover:text-white font-semibold transition-colors duration-200">Contos</a></li>
+                    <li><a href="#cronicas" class="text-red-100 hover:text-white font-semibold transition-colors duration-200">Crônicas</a></li>
+                </ul>
+            </nav>
+            <!-- Ícone do menu para mobile -->
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção de Início (Home) -->
+    <main class="container mx-auto p-6 md:p-12 space-y-12">
+        <section id="inicio" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-700">
+            <h2 class="text-3xl font-bold mb-4 text-red-900">Bem-vinda ao Mundo de Clarice</h2>
+            <p class="text-lg text-red-800 leading-relaxed">
+                Este é um espaço dedicado à obra imortal de Clarice Lispector, criado com carinho para todos os seus admiradores. Aqui você encontrará um acervo de sua vasta produção literária, com acesso rápido a romances, contos, crônicas e outros tesouros de sua escrita única. Explore, sinta e mergulhe nas palavras de uma das maiores autoras da literatura brasileira.
+            </p>
+        </section>
+
+        <!-- Seção de Biografia (com fotos integradas) -->
+        <section id="biografia" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-700">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 border-red-700 pb-2 text-red-900">Biografia</h2>
+            <div class="space-y-4 text-red-800">
+                <!-- Foto da Clarice criança flutuando à direita em telas maiores -->
+                <img src="https://site.claricelispector.ims.com.br/wp-content/uploads/clarice-crianca-web.jpg" alt="Clarice Lispector quando criança" class="float-right w-1/3 md:w-1/4 rounded-lg shadow-md object-cover ml-4 mb-4">
+                <p>Nascida Chaya Pinkhasivna Lispector em 10 de dezembro de 1920, em Tchetchelnik, Ucrânia, Clarice chegou ao Brasil ainda criança, fugindo da perseguição antissemita. A família se estabeleceu em Maceió e, depois, no Rio de Janeiro, onde ela se formou em Direito na década de 1940, mas já se dedicava à literatura e ao jornalismo.</p>
+                <p>Seu primeiro romance, **"Perto do Coração Selvagem"**, foi publicado em 1943, surpreendendo a crítica pela sua prosa inovadora e introspectiva. Clarice casou-se com o diplomata Maury Gurgel Valente e morou em diversos países, como Inglaterra, Itália e Estados Unidos. Foi durante esse período que escreveu grande parte de sua obra, sempre com a temática existencialista e a busca pelo "eu".</p>
+                <!-- Foto de Clarice escrevendo, flutuando à esquerda em telas maiores -->
+                <img src="https://media.gazetadopovo.com.br/2009/12/c334d2858d22fab3a9c3782231dfac2c-gpLarge.jpg" alt="Clarice Lispector escrevendo à máquina" class="float-left w-1/3 md:w-1/4 rounded-lg shadow-md object-cover mr-4 mb-4">
+                <p>Após retornar ao Brasil em 1959, ela entrou em sua fase mais produtiva, publicando obras-primas como **"A Paixão Segundo G.H."** (1964) e **"A Hora da Estrela"** (1977), seu último e um dos mais famosos romances. Clarice Lispector faleceu no dia 9 de dezembro de 1977, no Rio de Janeiro, um dia antes de completar 57 anos. Sua escrita continua a fascinar leitores do mundo todo, tornando-a um dos nomes mais importantes da literatura mundial.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Sugestão do Dia -->
+        <section id="sugestao-do-dia" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-700">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 border-red-700 pb-2 text-red-900">Sugestão do Dia</h2>
+            <div id="sugestao-card" class="bg-red-100 p-4 rounded-lg shadow-sm">
+                <!-- O conteúdo da sugestão será inserido aqui pelo JavaScript -->
+                <p class="text-red-800 text-center">Carregando sugestão...</p>
+            </div>
+        </section>
+
+        <!-- Seção de Romances (com foto integrada) -->
+        <section id="romances" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-700">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 border-red-700 pb-2 text-red-900">Romances</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card do romance Perto do Coração Selvagem -->
+                <a href="https://pt.wikipedia.org/wiki/Perto_do_Cora%C3%A7%C3%A3o_Selvagem" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">Perto do Coração Selvagem</h3>
+                    <p class="text-red-800">Primeiro romance da autora, publicado em 1943. A narrativa segue a vida de Joana, explorando seu mundo interior e sua busca por um sentido para a existência.</p>
+                </a>
+                <!-- Card do romance A Paixão Segundo G.H. -->
+                <a href="https://pt.wikipedia.org/wiki/A_Paix%C3%A3o_segundo_G.H." class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">A Paixão Segundo G.H.</h3>
+                    <p class="text-red-800">Considerado um dos mais enigmáticos de Clarice. O livro narra a experiência de G.H., uma escultora que, após matar uma barata, passa por uma profunda crise existencial.</p>
+                </a>
+                <!-- Card do romance A Hora da Estrela -->
+                <a href="https://pt.wikipedia.org/wiki/A_Hora_da_Estrela" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">A Hora da Estrela</h3>
+                    <p class="text-red-800">O último romance da autora, publicado em 1977. Conta a história da datilógrafa alagoana Macabéa, uma personagem de vida simples e solitária no Rio de Janeiro.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Contos -->
+        <section id="contos" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-700">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 border-red-700 pb-2 text-red-900">Contos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card do conto Laços de Família -->
+                <a href="https://pt.wikipedia.org/wiki/La%C3%A7os_de_Fam%C3%ADlia" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">Laços de Família</h3>
+                    <p class="text-red-800">Uma das mais aclamadas coletâneas de contos da autora. As histórias exploram as crises existenciais e as relações familiares de personagens comuns em situações cotidianas.</p>
+                </a>
+                <!-- Card do conto Felicidade Clandestina -->
+                <a href="https://pt.wikipedia.org/wiki/Felicidade_Clandestina" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">Felicidade Clandestina</h3>
+                    <p class="text-red-800">Coletânea de 25 contos que abordam temas como infância, adolescência e a redescoberta da felicidade em momentos inesperados e íntimos.</p>
+                </a>
+                <!-- Card do conto A Legião Estrangeira -->
+                <a href="https://pt.wikipedia.org/wiki/A_Legi%C3%A3o_Estrangeira_(livro)" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">A Legião Estrangeira</h3>
+                    <p class="text-red-800">Obras de ficção e crônicas se misturam neste livro, refletindo sobre a identidade e o pertencimento, com uma escrita que questiona a própria condição humana.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Crônicas -->
+        <section id="cronicas" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-700">
+            <h2 class="text-3xl font-bold mb-6 border-b-2 border-red-700 pb-2 text-red-900">Crônicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card da crônica A Descoberta do Mundo -->
+                <a href="https://pt.wikipedia.org/wiki/A_descoberta_do_mundo" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">A Descoberta do Mundo</h3>
+                    <p class="text-red-800">Compilação de crônicas publicadas no Jornal do Brasil entre 1967 e 1973. O livro é um diário de bordo da autora, com reflexões sobre a vida, o cotidiano e a sua própria escrita.</p>
+                </a>
+                <!-- Card da crônica Para Não Esquecer -->
+                <a href="https://rocco.com.br/produto/para-nao-esquecer/" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">Para Não Esquecer</h3>
+                    <p class="text-red-800">Uma coletânea de anotações, pensamentos e crônicas publicadas em 1964, que funcionam como um diário de memórias e reflexões sobre a busca pela essência humana.</p>
+                </a>
+                <!-- Card da crônica Correio para Mulheres -->
+                <a href="https://www.estantevirtual.com.br/livro/correio-para-mulheres-07C-3877-000-BK" class="block bg-red-100 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-200">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">Correio para Mulheres</h3>
+                    <p class="text-red-800">Textos publicados sob pseudônimos em colunas femininas de jornais. A obra oferece uma visão única do trabalho jornalístico de Clarice Lispector, misturando conselhos e pérolas literárias.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-red-900 text-white p-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 O Mundo de Clarice. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para a Sugestão do Dia -->
+    <script>
+        // O código será executado depois que todo o corpo do HTML for carregado
+        document.addEventListener('DOMContentLoaded', () => {
+            const sugestoes = [
+                {
+                    titulo: "A Hora da Estrela",
+                    link: "https://pt.wikipedia.org/wiki/A_Hora_da_Estrela",
+                    resumo: "O último romance de Clarice, publicado em 1977, narra a vida simples e solitária da datilógrafa Macabéa, uma personagem que encarna a condição dos invisíveis da sociedade.",
+                    motivo: "Leia hoje para refletir sobre a importância de dar voz àqueles que, muitas vezes, não têm espaço para serem ouvidos. Uma obra que nos lembra da complexidade da vida em suas formas mais singelas."
+                },
+                {
+                    titulo: "Laços de Família",
+                    link: "https://pt.wikipedia.org/wiki/La%C3%A7os_de_Fam%C3%ADlia",
+                    resumo: "Uma coletânea de contos aclamada pela crítica, onde Clarice explora as tensões e os momentos de revelação dentro das relações familiares e da vida cotidiana.",
+                    motivo: "Mergulhe nas relações familiares e nas crises existenciais de personagens comuns. Uma leitura ideal para se enxergar nos pequenos dramas e epifanias do dia a dia."
+                },
+                {
+                    titulo: "Felicidade Clandestina",
+                    link: "https://pt.wikipedia.org/wiki/Felicidade_Clandestina",
+                    resumo: "Composta por 25 contos, esta obra aborda a infância, a adolescência e a redescoberta da alegria em momentos inesperados, como a espera por um livro ou a observação de um cacto.",
+                    motivo: "Se você busca um respiro e um lembrete das pequenas alegrias, este é o livro perfeito. Uma leitura para reencontrar a felicidade nos detalhes e nas memórias de infância."
+                },
+                {
+                    titulo: "Perto do Coração Selvagem",
+                    link: "https://pt.wikipedia.org/wiki/Perto_do_Cora%C3%A7%C3%A3o_Selvagem",
+                    resumo: "O romance de estreia da autora, de 1943, que segue a vida interior de Joana. É uma jornada existencial de autoconhecimento, escrita em uma prosa lírica e fragmentada.",
+                    motivo: "Para uma profunda imersão na prosa poética e na busca incessante pelo 'eu'. É a porta de entrada para o universo filosófico e introspectivo de Clarice."
+                },
+                {
+                    titulo: "A Descoberta do Mundo",
+                    link: "https://pt.wikipedia.org/wiki/A_descoberta_do_mundo",
+                    resumo: "Uma compilação de crônicas publicadas no Jornal do Brasil entre 1967 e 1973. O livro funciona como um diário de bordo, com reflexões sobre o cotidiano e a própria arte de escrever.",
+                    motivo: "Uma leitura para se sentir em uma conversa íntima com a autora. As crônicas de Clarice são um convite para olhar o mundo com olhos renovados e perceber a poesia nos pequenos eventos."
+                }
+            ];
+
+            // Define um ponto de referência para a contagem dos dias
+            const epoch = new Date('2024-01-01');
+            const hoje = new Date();
+            // Calcula a diferença em milissegundos
+            const diffMilissegundos = hoje.getTime() - epoch.getTime();
+            // Converte a diferença para dias e arredonda para baixo
+            const diffDias = Math.floor(diffMilissegundos / (1000 * 60 * 60 * 24));
+            
+            // Usa o índice calculado para selecionar a sugestão, garantindo que o índice seja cíclico
+            const sugestaoDoDia = sugestoes[diffDias % sugestoes.length];
+
+            const sugestaoCard = document.getElementById('sugestao-card');
+            sugestaoCard.innerHTML = `
+                <a href="${sugestaoDoDia.link}" class="block">
+                    <h3 class="text-xl font-semibold mb-2 text-red-900">${sugestaoDoDia.titulo}</h3>
+                    <p class="text-red-800 mb-2">${sugestaoDoDia.resumo}</p>
+                    <p class="font-medium text-red-900">**Por que ler hoje:** ${sugestaoDoDia.motivo}</p>
+                </a>
+            `;
+        });
+    </script>
+</body>
+</html>
